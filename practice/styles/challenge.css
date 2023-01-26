@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
+
+body{
+    font-family: "Source Serif Pro";
+    background-color: pink;
+    color: white;
+}
+h1, h3, p {
+    text-align: center;
+}
+ol, #name, h1:hover{
+    color: #000;
+}
+img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+ol{
+    width: 40%;
+    margin: 20px auto;
+}
+.quote{
+    font-size: 2em;
+    width: 30%;
+    margin: 30px auto;
+}
+#name{
+    width: 40%;
+    margin: 0 auto;
+}
