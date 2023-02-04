@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
 
+body{
+    font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: #698996;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h4, a{
+    font-family: 'Work Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    margin: 0;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -11,9 +24,6 @@
     height: 725px;
     background-color: #2C481D;
 }
-body{
-    background-color: #698996;
-}
 header{
     background-color: rgba(44, 72, 29, 0.7);
 }
@@ -21,6 +31,7 @@ nav a{
     color: #F9B58B;
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     background-color: #698996;
@@ -28,6 +39,8 @@ nav a:hover{
 }
 .home-title{
     color: white;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: #231906;
@@ -36,6 +49,10 @@ h4{
     background-color: #2C481D;
     color: #F9B58B;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #698996;
@@ -43,16 +60,22 @@ h4{
 }
 .msg{
     background-color: #F9B58B;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2{
     color: #231906;
 }
 .msg p{
     color: #231906;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer{
     background-color: #231906;
     color: #F9B58B;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p{
     font-size: 1.2em;
@@ -61,7 +84,10 @@ footer a{
     color: #F9B58B;
     text-decoration: none;
 }
-footer a:hover{
+footer .social img{
+    padding-top: 15px;
+}
+footer p a:hover{
     background-color: #F9B58B;
     color: #231906;
     text-decoration: underline
@@ -69,6 +95,21 @@ footer a:hover{
 .icon, .logo{
     width: 80px;
 }
+.icon{
+    padding-top: 10px;
+}
 #hero-img{
     width: 100%;
+}
+#logo_link{
+    padding-top: 5px
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #F9B58B;
+}
+main section img{
+    box-sizing: border-box;
 }
