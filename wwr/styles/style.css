@@ -65,6 +65,19 @@ nav a:hover{
 #hero-msg h4{
     color: #F9B58B;
 }
+#hero-river{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-river #hero-box img{
+    opacity: 0.9;
+}
+#hero-river #hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 140px;
+}
 .home-title{
     color: white;
     font-size: 2em;
@@ -76,6 +89,51 @@ h4{
 .home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+}
+.rivers-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+}
+#idaho-river{
+    width: 60%;
+    float: left;
+    margin: 1rem;
+}
+#utah-river{
+    width: 60%;
+    float: right;
+    margin: 1rem;
+}
+#arizona-river{
+    width: 60%;
+    float: left;
+    margin: 1rem;
+}
+.idaho-section, .utah-section, .arizona-section{
+    text-align: left;
+}
+.idaho-content, .utah-content, .arizona-content{
+    margin-top: 105px;
+}
+.idaho-title, .utah-title, .arizona-title{
+    color: #F9B58B;
+    background-color: rgba(35,25,6,0.7);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;   
+    position: absolute;
+
+}
+.idaho-title{
+    left: 20%;
+}
+.utah-title{
+    left: 20%;
+}
+.arizona-title{
+    left: 31%;
 }
 .card-img{
     border: 10px solid #F9B58B;
@@ -178,7 +236,7 @@ main section img{
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, #hero-river, .home-grid {
         display: block;
         height: auto;
     }
@@ -189,18 +247,17 @@ main section img{
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #hero-river{
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #hero-river #hero-msg{
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero #hero-msg h4 {
         display: none;
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
@@ -216,5 +273,30 @@ main section img{
     }
     footer {
         margin-top: 25px;
+    }
+    
+    .idaho-title, .utah-title, .arizona-title{
+        position: static;
+    }
+    #idaho-river, #utah-river, #arizona-river{
+        width: 100%;
+        display: block;
+        margin: 1rem 0;
+    }
+    #hero-river #hero-box img{
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .idaho-title, .utah-title, .arizona-title{
+        width: 85vw;
+        left: 6%;
+    }
+    .idaho-content, .utah-content, .arizona-content{
+        font-size: 2rem;
+    }
+    #hero-msg h4, nav a {
+        font-size: 1.5em;
     }
 }
