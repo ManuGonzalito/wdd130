@@ -35,7 +35,7 @@
                 <p>Our Web Site product is an effective and straightforward way to expand your customer base and showcase your contributions to your community. Whether you are a corporation, a small business, or an individual, we offer a range of solutions to help you achieve your goals. Our websites can be used to sell products, showcase your skills with an online resume or CV, or even collect donations for your non-profit or charity organization.</p>
                 <p>With our Web Site product, you can establish your online presence and reach a wider audience, all while showcasing your brand and values.</p>
             </div>
-            <img src="images/web_page.jpg" alt="Website">
+            <img src="images/web_page.jpg" alt="Website" id="website">
         </section>
         <section class="online-menu">
             <h3>Online Menu</h3>
@@ -50,7 +50,7 @@
                 </ul>
                 <p>Contact us today to learn more about our website development services and how we can help you achieve your online goals.</p>
             </div>
-            <img src="images/digital_menu.jpg" alt="Online Menu">
+            <img src="images/digital_menu.jpg" alt="Online Menu" id="online-menu">
         </section>
     </main>
     <div id="my-modal" class="modal">
@@ -73,4 +73,33 @@
         </div>
     </footer>
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("my-modal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById("website");
+    var img2 = document.getElementById("online-menu");
+    var modalImg = document.getElementById("modal_img");
+    var captionText = document.getElementById("caption");
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
 </html>
