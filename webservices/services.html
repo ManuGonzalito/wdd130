@@ -66,18 +66,13 @@
                     <p>Get started with programming your website easily with our simple installation of Wordpress, Magento, Drupal, and more.</p>
                 </div>
             </div>
-            <img src="images/services_1.jpg" alt="We help you to build your business with the best services">
-            <img src="images/services_2.jpg" alt="Always ready to improve your digital experience">
+            <img src="images/services_1.jpg" alt="We help you to build your business with the best services" id="img_services1">
+            <img src="images/services_2.jpg" alt="Always ready to improve your digital experience" id="img_services2">
             <div class="msg">
                 All our products come with these services included to provide you with the best possible digital experience.
             </div>
         </section>
     </main>
-    <div id="my-modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal_img">
-        <div id="caption"></div>
-    </div>
     <footer>
         <p>Gontech Solutions &copy; 2023 - All rights reserved</p>
         <p><a href="products.html">Products</a></p>
@@ -92,5 +87,39 @@
             </a>
         </div>
     </footer>
+    <div id="my-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal_img">
+        <div id="caption"></div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("my-modal");
+    
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById("img_services1");
+        var img2 = document.getElementById("img_services2");
+        var modalImg = document.getElementById("modal_img");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    
+        img2.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -261,12 +261,12 @@ footer p a{
 /* WEB COMPONENT */
 
 /* The images that will show in the modal */
-#website, #online-menu{
+#website, #online-menu, #img_services1, #img_services2{
     cursor: pointer;
     transition: 0.3s;
 }
 
-#website:hover, #online-menu:hover{
+#website:hover, #online-menu:hover, #img_services1:hover, #img_services2:hover{
     opacity: 0.7;
 }
 
